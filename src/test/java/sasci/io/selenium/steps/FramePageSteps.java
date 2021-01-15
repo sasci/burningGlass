@@ -34,8 +34,8 @@ public class FramePageSteps {
         framePage.searchAuthor();
     }
 
-    @Then("user should see in the {string}")
-    public void userShouldSeeInThe(String arg0) {
+    @Then("user should see {string}")
+    public void userShouldSee(String arg0) {
         framePage.authorPageTitle(arg0);
     }
 
