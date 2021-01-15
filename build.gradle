@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'sasci.io'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.13'
+    compile 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    compile 'io.github.bonigarcia:webdrivermanager:4.2.2'
+    compile 'io.cucumber:cucumber-java:6.9.1'
+    compile 'io.cucumber:cucumber-junit:6.9.1'
+    compile 'org.junit.jupiter:junit-jupiter:5.6.3'
+    compile 'org.junit.jupiter:junit-jupiter-engine:5.6.3'
+    compile group: 'de.monochromata.cucumber', name: 'reporting-plugin', version: '4.0.89'
+    compile 'org.apache.commons:commons-lang3:3.11'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.12.1'
+    compile 'org.projectlombok:lombok:1.18.16'
+
+    compile 'org.apache.logging.log4j:log4j-core:2.14.0'
+}

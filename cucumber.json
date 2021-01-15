@@ -1,0 +1,88 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-14T20:13:28.162Z",
+        "before": [
+          {
+            "result": {
+              "duration": 239721000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "sasci.io.selenium.steps.Initialize.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User goes to Google Main Page",
+        "description": "",
+        "id": "lets-go-to-google;user-goes-to-google-main-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1168792000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "sasci.io.selenium.steps.BasePage.closeWebBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3523022000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user opens \"https://www.google.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.google.com\"",
+                  "offset": 11
+                }
+              ],
+              "location": "sasci.io.selenium.steps.MainPageSteps.userOpens(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d87.0.4280.141)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u002700063SA\u0027, ip: \u0027fe80:0:0:0:1880:6900:868d:4f0e%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u002711.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/c0/hdwh3t0s6t7...}, goog:chromeOptions: {debuggerAddress: localhost:60358}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 7adea2cd368aac6444038459a3e4e5e9\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat sasci.io.selenium.pages.MainPage.search(MainPage.java:28)\n\tat sasci.io.selenium.steps.MainPageSteps.userTypeInSearchBox(MainPageSteps.java:19)\n\tat ✽.user type \"Burning Glass\" in searchBox(file:///Users/sasci/work/intellij/burningGlass/src/test/resources/features/MainPage.feature:5)\n",
+              "duration": 197521000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user type \"Burning Glass\" in searchBox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Burning Glass\"",
+                  "offset": 10
+                }
+              ],
+              "location": "sasci.io.selenium.steps.MainPageSteps.userTypeInSearchBox(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@frame"
+          }
+        ]
+      }
+    ],
+    "name": "Lets go to google",
+    "description": "",
+    "id": "lets-go-to-google",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/MainPage.feature",
+    "tags": []
+  }
+]
