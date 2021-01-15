@@ -1,4 +1,4 @@
-Feature: Lets go to google
+Feature: Lets go to Frame Page
   @frame
   Scenario: User goes to Frame Page
     Given user opens "baseUrl"
